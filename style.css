@@ -6,3 +6,69 @@ Tags: responsive
 Author: Anna Boberg et al
 Author URI: https://github.com/iths-anna-boberg
 */
+
+:root {
+  --heading-font: 'EB Garamond', serif;
+  --text-font: 'Work Sans', sans-serif;
+  --main-black: #545454;
+  --main-darkblue: #425D87;
+  --main-pink: #FFCDCD;
+  --main-lightblue: #E4F2FF;
+  --main-white: #FFFFFF;
+}
+
+body {
+  font-family: var(--text-font);
+}
+
+h1 {
+  font-family: var(--heading-font);
+  font-size: 70px;
+  color: var(--main-black);
+  font-weight: 600;
+  font-variant: small-caps;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  font-size: 60px;
+  color: var(--main-black);
+  font-weight: 500;
+}
+
+h3 {
+  font-family: var(--heading-font);
+  font-size: 40px;
+  color: var(--main-black);
+}
+
+h4 {
+  font-family: var(--heading-font);
+  font-size: 30px;
+  color: var(--main-black);
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: var(--text-font);
+  font-size: 20px;
+  color: var(--main-black);
+  font-weight: 600;
+}
+
+h6 {
+  font-family: var(--heading-font);
+  font-size: 24px;
+  color: var(--main-black);
+  font-weight: 600;
+}
+
+p {
+  font-family: var(--text-font);
+  font-size: 18px;
+}
+
+.aoh-navbar {
+  background-color: rgba(0,0,0,0.13);
+}
