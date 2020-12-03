@@ -8,13 +8,13 @@ Author URI: https://github.com/iths-anna-boberg
 */
 
 :root {
-  --heading-font: 'EB Garamond', serif;
-  --text-font: 'Work Sans', sans-serif;
+  --heading-font: "EB Garamond", serif;
+  --text-font: "Work Sans", sans-serif;
   --main-black: #545454;
-  --main-darkblue: #425D87;
-  --main-pink: #FFCDCD;
-  --main-lightblue: #E4F2FF;
-  --main-white: #FFFFFF;
+  --main-darkblue: #425d87;
+  --main-pink: #ffcdcd;
+  --main-lightblue: #e4f2ff;
+  --main-white: #ffffff;
 }
 
 body {
@@ -69,6 +69,15 @@ p {
   font-size: 18px;
 }
 
+a[href^="tel"] {
+  color: var(--main-white);
+  text-decoration: none;
+}
+
+.aoh-text-white {
+  color: var(--main-white);
+}
+
 .aoh-btn-solid {
   font-family: var(--heading-font);
   text-transform: uppercase;
@@ -88,7 +97,7 @@ p {
 }
 
 .aoh-navbar {
-  background-color: rgba(0,0,0,0.13);
+  background-color: rgba(0, 0, 0, 0.13);
 }
 
 .nav-link {
@@ -105,8 +114,14 @@ p {
 }
 
 .aoh-jumbotron {
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 46%, rgba(0,0,0,0.2) 78%, rgba(0,0,0,0) 100%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.25) 46%,
+    rgba(0, 0, 0, 0.2) 78%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .aoh-hero-cta {
@@ -117,6 +132,8 @@ p {
   font-family: var(--heading-font);
   font-size: 48px;
   color: var(--main-white);
+  font-variant: unset;
+  text-transform: unset;
 }
 
 .aoh-hero-preamble {
@@ -127,4 +144,28 @@ p {
 
 .aoh-navbar-nav {
   margin-right: 50px;
+}
+
+.aoh-hr {
+  width: 50%;
+  margin-inline-start: 0;
+}
+
+.aoh-box-lightblue {
+  background: var(--main-lightblue);
+}
+
+.aoh-map-placeholder {
+  background-color: var(--main-lightblue);
+  height: 400px;
+}
+
+.aoh-list-no-bullet {
+  list-style-type: none;
+}
+
+.aoh-footer {
+  background-image: url("./mockup-assets/aoh-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
