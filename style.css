@@ -113,6 +113,12 @@ a[href^="tel"] {
   min-height: 80vh;
 }
 
+.aoh-hero-sm {
+  background-image: url("./mockup-assets/aoh-hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .aoh-jumbotron {
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -144,6 +150,10 @@ a[href^="tel"] {
 
 .aoh-navbar-nav {
   margin-right: 50px;
+}
+
+.aoh-main-container {
+  background-color: var(--main-white);
 }
 
 .aoh-hr {
