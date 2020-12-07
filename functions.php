@@ -40,4 +40,20 @@
 
   add_action('init', 'aoh_menus');
 
+  function aoh_event_widget_area(){
+    register_sidebar(
+      array(
+        'before-title' => '<h4>',
+        'after-title' => '</h4>',
+        'before-widget' => '',
+        'after-widget' => '',
+        'name' => 'Start Page Event Area',
+        'id' => 'start-page-event-box',
+        'description' => 'Add event widget here'
+      )
+    );
+  }
+
+  add_action('widgets_init', 'aoh_event_widget_area');
+
 ?>

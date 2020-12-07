@@ -17,6 +17,12 @@
         }
       ?>
 
+      <?php 
+      
+        dynamic_sidebar('start-page-event-box');
+      
+      ?>
+
       </article>
     </div>
   </section>
