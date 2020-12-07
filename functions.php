@@ -30,4 +30,14 @@
 
   add_action('after_setup_theme', 'aoh_custom_header');
 
+  function aoh_menus(){
+    $locations = array(
+      'primary' => 'topmenu',
+      'footer' => 'footer-items',
+    );
+    register_nav_menus($locations);
+  }
+
+  add_action('init', 'aoh_menus');
+
 ?>
