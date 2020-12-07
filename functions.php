@@ -10,4 +10,24 @@
 
   add_action('wp_enqueue_scripts', 'aoh_enqueue_scripts');
 
+  function aoh_theme_support(){
+    add_theme_support('title-tag');
+    add_theme_support('custom-logo');
+  }
+
+  add_action('after_setup_theme', 'aoh_theme_support');
+
+  function aoh_custom_header(){
+    $args = array(        
+      'default-text-color' => '000',
+      'width'              => 1440,
+      'height'             => 834,
+      'flex-width'         => true,
+      'flex-height'        => true,
+    );
+    add_theme_support('custom-header', $args);
+  }
+
+  add_action('after_setup_theme', 'aoh_custom_header');
+
 ?>
