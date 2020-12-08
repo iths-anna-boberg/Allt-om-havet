@@ -30,5 +30,5 @@ get_header('small', false);
 </section>
 
 <?php
-get_footer();   
+get_footer();
 ?>
