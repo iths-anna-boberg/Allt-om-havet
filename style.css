@@ -114,7 +114,7 @@ a[href^="tel"] {
 }
 
 .aoh-hero-sm {
-  background-image: url("./mockup-assets/aoh-hero.png");
+  /* background-image: url("./mockup-assets/aoh-hero.png"); */
   background-size: cover;
   background-repeat: no-repeat;
 }
