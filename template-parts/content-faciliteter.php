@@ -4,7 +4,7 @@
 $facilities = get_field('faciliteter');
 $options = get_field_object('faciliteter');
 // echo '<pre>',print_r($options),'</pre>';
-echo "<h2 class='capitalize'>".$options['name']."</h2>";
+echo "<h4>".$options['name']."</h4>";
 $options = $options['choices'];
 
 

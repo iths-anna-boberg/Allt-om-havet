@@ -1,6 +1,11 @@
 <div class="row">
     <div class="col-sm-8">
-        <img class="img-fluid" src="<?php echo esc_url(get_the_post_thumbnail_url()); ?>" alt="Göta Hamn">
+        <?php 
+            if (get_the_post_thumbnail_url()) {
+
+                echo "<img class='img-fluid' src=" . esc_url(get_the_post_thumbnail_url()) . " >";
+            }
+        ?>
 
         <?php the_content(); ?>
     </div>
