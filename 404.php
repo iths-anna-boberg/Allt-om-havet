@@ -8,7 +8,7 @@ get_header('small', false);
 
 <section class="container col">
   <h1 class="row justify-content-center border-bottom border-dark">
-    Not found
+    Error 404
   </h1>
   <article class="col aoh-404-content">
     <div class="aoh-404-inner">

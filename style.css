@@ -209,6 +209,11 @@ a[href^="tel"] {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1024px){
+  .aoh-404-content div {
+    max-width: 90vw;
+  }
+}
 
 .aoh-404-inner {
   height: 100%;
