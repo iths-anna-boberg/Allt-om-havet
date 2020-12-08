@@ -195,3 +195,9 @@ a[href^="tel"] {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.aoh-404-content {
+  min-height: 87vh;
+  justify-content: center;
+  align-items: center;
+}
