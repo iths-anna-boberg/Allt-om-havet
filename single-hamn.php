@@ -17,13 +17,12 @@ if(have_posts()){
           <?php get_template_part('template-parts/content', 'lan');?>
         </div>
         <div class="col-sm-3">
-          <p><strong>Temperatur:</strong> -14</p>
-          <p><strong>Vindhastighet:</strong> 28m/s</p>
+          <?php get_template_part('template-parts/content', 'weather');?>
         </div>
       </div>
     <?php get_template_part('template-parts/content', 'hamndata');?>
     <?php get_template_part('template-parts/content', 'hamn');?>
-  </section>
+</section>
     <?php
   }
 }
