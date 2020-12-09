@@ -1,3 +1,45 @@
 .tribe-events-view{
-  background-color: red !important;
+  /* background-color: red !important; */
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-header--has-event-search .tribe-events-header__events-bar{
+  width: 30%;
+}
+
+#tribe-events-view-selector-content{
+  display: none !important;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-header__events-bar{
+  margin: 0 !important;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__input{
+  height: 20px !important;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__input-group{
+  position: relative !important;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__button {
+  visibility: hidden !important;
+  position: absolute !important;
+  right: 10px;
+  /* background: transparent !important;
+  content: none !important;
+  border: none !important; */
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__button::after {
+  content: "" !important;
+  width: 14px !important;
+  height: 14px !important;
+  background-image: url("localhost:8888/alltomhavet/wp-content/themes/alltomhavet/assets/search.png");
+  background-size: cover !important;
+  background-position: center !important;
+  visibility: visible !important;
+  /* background: transparent !important;
+  content: none !important;
+  border: none !important; */
 }
