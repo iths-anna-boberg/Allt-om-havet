@@ -197,7 +197,7 @@ a[href^="tel"] {
 }
 
 .aoh-404-content {
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

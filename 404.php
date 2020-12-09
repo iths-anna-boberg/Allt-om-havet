@@ -6,7 +6,7 @@
 get_header('small', false);
 ?>
 
-<section class="container col">
+<section class="container col p-5">
   <h1 class="row justify-content-center border-bottom border-dark">
     Error 404
   </h1>
