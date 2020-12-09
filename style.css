@@ -114,7 +114,7 @@ a[href^="tel"] {
 }
 
 .aoh-hero-sm {
-  background-image: url("./mockup-assets/aoh-hero.png");
+  /* background-image: url("./mockup-assets/aoh-hero.png"); */
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -130,9 +130,7 @@ a[href^="tel"] {
   );
 }
 
-.aoh-hero-cta {
-  /* margin: 12vh 0 0 7vw; */
-}
+
 
 .aoh-hero-heading {
   font-family: var(--heading-font);
@@ -197,7 +195,7 @@ a[href^="tel"] {
 }
 
 .aoh-404-content {
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

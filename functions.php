@@ -14,6 +14,7 @@
   function aoh_theme_support(){
     add_theme_support('title-tag');
     add_theme_support('custom-logo');
+    add_theme_support('post-thumbnails');
   }
 
   add_action('after_setup_theme', 'aoh_theme_support');
@@ -73,7 +74,7 @@
   add_action('widgets_init', 'aoh_footer_widget_area');
 
   function aoh_create_post_type_dock(){
-    register_post_type('Hamn', 
+    register_post_type('hamn', 
       array(
         'labels' => array(
           'name' => __('Hamnar'),
@@ -101,7 +102,7 @@
         'has_archive' => true,
         'exclude_from_search' => false,
         'publicly_queryable' => true,
-        'capability_type' => 'page',
+        'capability_type' => 'post',
         'show_in_rest' => true
       )
     );
