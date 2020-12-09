@@ -25,6 +25,9 @@
 .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__button {
   visibility: hidden !important;
   position: absolute !important;
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
   right: 10px;
   /* background: transparent !important;
   content: none !important;
@@ -33,9 +36,10 @@
 
 .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__button::after {
   content: "" !important;
+  display: block !important;
   width: 14px !important;
   height: 14px !important;
-  background-image: url("localhost:8888/alltomhavet/wp-content/themes/alltomhavet/assets/search.png");
+  background-image: url("search.png");
   background-size: cover !important;
   background-position: center !important;
   visibility: visible !important;
