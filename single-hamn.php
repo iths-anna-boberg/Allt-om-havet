@@ -16,6 +16,7 @@ if(have_posts()){
           <h1><?php the_title(); ?></h1>
           <?php get_template_part('template-parts/content', 'lan');?>
         </div>
+      </div>
         <div class="col-sm-3">
           <?php get_template_part('template-parts/content', 'weather');?>
         </div>
