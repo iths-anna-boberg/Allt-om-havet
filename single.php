@@ -7,7 +7,7 @@
  * @since Allt Om Havet 1.0
  */
 
-get_header();
+get_header('small');
 ?>
 
     <?php
@@ -18,7 +18,7 @@ get_header();
         
             <article id= "post-<?php the_ID(); ?>">
 
-                <?php the_title('<h1></h1>'); ?>
+                <h1><?php the_title(); ?></h1>
                 <?php the_category(); ?>
                 <?php the_content(); ?>
 

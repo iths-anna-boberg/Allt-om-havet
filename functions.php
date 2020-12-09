@@ -54,7 +54,22 @@
     );
   }
 
+  function aoh_footer_widget_area(){
+    register_sidebar(
+      array(
+        'before-title' => '<h4>',
+        'after-title' => '</h4>',
+        'before-widget' => '',
+        'after-widget' => '',
+        'name' => 'Footer Widget Area',
+        'id' => 'footer-widget-area',
+        'description' => 'Add footer widget here'
+      )
+    );
+  }
+
   add_action('widgets_init', 'aoh_event_widget_area');
+  add_action('widgets_init', 'aoh_footer_widget_area');
 
   function aoh_create_post_type_dock(){
     register_post_type('Hamn', 
