@@ -1,6 +1,6 @@
 <?php
 
-  get_header('small');
+  get_header();
 
 ?>
 
