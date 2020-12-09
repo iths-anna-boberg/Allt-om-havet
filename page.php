@@ -1,4 +1,4 @@
-<?php /* Template Name: testPage1 */ ?>
+<?php /* Template Name: page.php */ ?>
 <?php get_header('small'); ?>
 
 <section class='container'>
