@@ -74,6 +74,10 @@ a[href^="tel"] {
   text-decoration: none;
 }
 
+.post-categories{
+  list-style-type: none;
+}
+
 .aoh-text-white {
   color: var(--main-white);
 }
