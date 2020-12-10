@@ -6,17 +6,14 @@
 get_header('small', false);
 ?>
 
-<section class="container col p-5">
+<section class="container">
   <h1 class="row justify-content-center border-bottom border-dark">
     Error 404
   </h1>
   <article class="col aoh-404-content">
     <div class="aoh-404-inner">
       <div class="justify-content-center p-5">
-        <?php 
-          $img = wp_get_attachment_image( 9, 'medium' );
-          echo $img;
-        ?>
+          <img alt="Sinking 404-boat" src="<?php echo get_template_directory_uri(); ?>/assets/404-image.png" >
       </div>
       <div>
         <p class="text-center">Hoppsan hejsan! Vi kunde inte hitta sidan du letade efter.
