@@ -10,6 +10,10 @@
 get_header('small');
 ?>
 
+<<<<<<< Updated upstream
+=======
+<section class="container">
+>>>>>>> Stashed changes
     <?php
 
 	if ( have_posts() ):
@@ -18,8 +22,19 @@ get_header('small');
         
             <article id= "post-<?php the_ID(); ?>">
 
+<<<<<<< Updated upstream
                 <h1><?php the_title(); ?></h1>
                 <?php the_category(); ?>
+=======
+                    <h1 class="border-bottom border-dark"><?php the_title(); ?></h1>
+
+                <article class="row mt-4">
+                    <?php the_category(); ?>
+                    <p class="mr-1 ml-1">|</p>
+                    <?php $post_date = get_the_date( ' F j, Y' ); echo $post_date; ?>
+                </article>
+
+>>>>>>> Stashed changes
                 <?php the_content(); ?>
 
             </article>
@@ -28,5 +43,9 @@ get_header('small');
     endif;
     
 	?>
+<<<<<<< Updated upstream
+=======
+</section>
+>>>>>>> Stashed changes
 
 <?php get_footer(); ?>
