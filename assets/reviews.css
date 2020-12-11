@@ -1,3 +1,7 @@
+/* .reviews-area {
+    display: flex;
+    flex-wrap: wrap;
+} */
 .review-rating > .rating-on::before {
     color: #FDBC4B;
 }
@@ -6,3 +10,21 @@
     color: #FDBC4B;
 }
 
+.review-title {
+    font-family: var(--heading-font);
+    font-size: 24px;
+    color: var(--main-black);
+    font-weight: 600;
+}
+
+.reviewer-name {
+    font-family: var(--heading-font);
+    font-size: 20px;
+    color: var(--main-black);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.ic_rev {
+    background-color: var(--main-lightblue);
+}
