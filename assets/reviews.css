@@ -1,0 +1,8 @@
+.review-rating > .rating-on::before {
+    color: #FDBC4B;
+}
+
+.review-rating > .rating-off::before {
+    color: #FDBC4B;
+}
+
