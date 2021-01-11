@@ -27,6 +27,9 @@
 
 .ic_rev {
     background-color: var(--main-lightblue);
+    width: 100%;
+    max-width: 100% !important;
+    border: 0 !important;
 }
 
 input#submit.submit{
