@@ -28,3 +28,12 @@
 .ic_rev {
     background-color: var(--main-lightblue);
 }
+
+input#submit.submit{
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    background: var(--main-darkblue);
+    border: none;
+    color: var(--main-white);
+    padding: 5px 20px;
+}
