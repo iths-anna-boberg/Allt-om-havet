@@ -71,7 +71,7 @@
   margin: 3px !important;
 }
 
-.tribe-events-calendar-list__event-row:nth-of-type(2n+3){
+.tribe-events-calendar-list__event-row:nth-of-type(2n+2){
   background-color: var(--main-lightblue) !important;
 }
 
@@ -79,7 +79,7 @@
   display: none !important;
 }
 
-h3.tribe-events-calendar-list__event-title{
+a.tribe-events-calendar-list__event-title-link{
   font-family: "Work Sans", sans-serif !important;
   font-size: 15px !important;
   color: black !important;
@@ -130,6 +130,10 @@ h3.tribe-events-calendar-list__event-title{
 }
 
 /* LATEST PAST EVENTS */
+
+.tribe-events-calendar-latest-past{
+  opacity: 0.7;
+}
 
 .tribe-events-calendar-latest-past__event-header{
   display: grid !important;
@@ -241,5 +245,61 @@ article.tribe-events-calendar-latest-past__event{
 }
 
 h2.tribe-events-calendar-latest-past__heading{
+  font-size: 30px;
+  text-transform: capitalize;
+  font-variant: small-caps;
+}
+
+/* SINGLE-EVENT */
+
+h1.tribe-events-single-event-title{
+  color: black;
+}
+
+h2.tribe-events-single-section-title{
+  font-family: var(--heading-font) !important;
+  font-size: 30px !important;
+  color: var(--main-black) !important;
+  font-weight: 500 !important;
+}
+
+#tribe-events-content{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.tribe-events-schedule h2{
+  font-family: var(--text-font);
   font-size: 20px;
+}
+
+span.tribe-events-cost{
+  font-family: var(--text-font);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+dt.tribe-organizer-url-label{
+  display: none;
+}
+
+.tribe-events-meta-group-details{
+  display: none;
+}
+
+.tribe-events-gmap{
+  display: none;
+}
+
+address span.tribe-delimiter{
+  display: none !important;
+}
+
+.tribe-events-single-event-description{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tribe-events-back{
+  margin: 20px 0 20px !important;
 }
