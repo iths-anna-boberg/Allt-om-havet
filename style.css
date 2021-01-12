@@ -30,6 +30,12 @@ h1 {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 500px){
+  h1 {
+    font-size: 50px !important;
+  }
+}
+
 h2 {
   font-family: var(--heading-font);
   font-size: 60px;
