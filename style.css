@@ -10,7 +10,7 @@ Author URI: https://github.com/iths-anna-boberg
 :root {
   --heading-font: "EB Garamond", serif;
   --text-font: "Work Sans", sans-serif;
-  --main-black: #545454;
+  --main-black: #000000;
   --main-darkblue: #425d87;
   --main-pink: #ffcdcd;
   --main-lightblue: #e4f2ff;
@@ -28,6 +28,12 @@ h1 {
   font-weight: 600;
   font-variant: small-caps;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 500px){
+  h1 {
+    font-size: 50px !important;
+  }
 }
 
 h2 {
