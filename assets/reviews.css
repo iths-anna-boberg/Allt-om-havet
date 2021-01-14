@@ -1,0 +1,42 @@
+/* .reviews-area {
+    display: flex;
+    flex-wrap: wrap;
+} */
+.review-rating > .rating-on::before {
+    color: #FDBC4B;
+}
+
+.review-rating > .rating-off::before {
+    color: #FDBC4B;
+}
+
+.review-title {
+    font-family: var(--heading-font);
+    font-size: 24px;
+    color: var(--main-black);
+    font-weight: 600;
+}
+
+.reviewer-name {
+    font-family: var(--heading-font);
+    font-size: 20px;
+    color: var(--main-black);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.ic_rev {
+    background-color: var(--main-lightblue);
+    width: 100%;
+    max-width: 100% !important;
+    border: 0 !important;
+}
+
+input#submit.submit{
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    background: var(--main-darkblue);
+    border: none;
+    color: var(--main-white);
+    padding: 5px 20px;
+}
