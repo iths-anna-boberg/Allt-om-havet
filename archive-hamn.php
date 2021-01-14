@@ -6,8 +6,11 @@ get_header('small');
 
 <div class="container">
   <h1>Hamnar</h1>
+  <form>
+    <input>
+    <button class="searchbutton" type="submit">
+  </form>
   <hr>
-
 <?php 
   if(have_posts()) :while(have_posts()) : the_post();
 ?>
