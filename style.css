@@ -223,3 +223,9 @@ a[href^="tel"] {
   flex-direction: column;
   justify-content: center;
 }
+
+
+p.aoh-comments-title {
+  background-color: lightblue;
+  text-align: center;
+}

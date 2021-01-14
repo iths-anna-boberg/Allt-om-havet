@@ -9,20 +9,20 @@ if ( post_password_required() ) {
 
 	<?php
 	if ( have_comments() ) : ?>
-		<h2 class="comments-title">
-			<?php _e('Comments', 'noto-simple'); ?>
-		</h2>
+		<p class="aoh-comments-title">
+			<?php _e('Kommentarer', 'noto-simple'); ?>
+		</p>
 
 		<?php
         the_comments_navigation(array(
-            'prev_text' =>'<i class="material-icons">navigate_before</i><span class="hidden-sm">' . __('Older comments', 'noto-simple') . '</span>',
-            'next_text' => '<span class="hidden-sm">' . __('Newer comments', 'noto-simple') . '</span><i class="material-icons">navigate_next</i>',
+            'prev_text' =>'<i class="material-icons">navigate_before</i><span class="hidden-sm">' . __('Äldre kommentarer', 'noto-simple') . '</span>',
+            'next_text' => '<span class="hidden-sm">' . __('Senare kommentarer', 'noto-simple') . '</span><i class="material-icons">navigate_next</i>',
         )); ?>
 
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
-					'style'      => 'ol',
+					'style'      => 'ul',
 					'short_ping' => true,
                     'avatar_size' => 32,
 				) );
@@ -31,12 +31,12 @@ if ( post_password_required() ) {
 
 		<?php 
         the_comments_navigation(array(
-            'prev_text' =>'<i class="material-icons">navigate_before</i><span class="hidden-sm hidden-md">' . __('Older comments', 'noto-simple') . '</span>',
-            'next_text' => '<span class="hidden-sm hidden-md">' . __('Newer comments', 'noto-simple') . '</span><i class="material-icons">navigate_next</i>',
+            'prev_text' =>'<i class="material-icons">navigate_before</i><span class="hidden-sm hidden-md">' . __('Äldre kommentarer', 'noto-simple') . '</span>',
+            'next_text' => '<span class="hidden-sm hidden-md">' . __('Senare kommentarer', 'noto-simple') . '</span><i class="material-icons">navigate_next</i>',
         ));
 
 		if ( ! comments_open() ) : ?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'noto-simple' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Kommentarsfältet stängt', 'noto-simple' ); ?></p>
 		<?php
 		endif;
 
