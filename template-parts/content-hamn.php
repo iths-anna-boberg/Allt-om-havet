@@ -13,7 +13,9 @@
                     echo render_block($block);
                 }
                 if ($block['blockName'] === 'booking/booking') {
-                    echo do_shortcode( $block['innerHTML'] );
+                    // echo do_shortcode( $block['innerHTML'] );
+                    echo render_block($block);
+
                 }
                 
             }            

@@ -13,9 +13,11 @@ $personal_4 = get_field('personal_4');
     echo "<div class='d-flex aoh-contact-wrapper'>";
     foreach ($blocks as $block) {
         
-        if ($block['blockName'] === 'core/shortcode') {
+        if ($block['blockName'] === 'mappress/map') {
           // echo $block['innerHTML'];
-          echo do_shortcode( $block['innerHTML'] );
+          // echo do_shortcode( $block['innerHTML'] );
+          echo render_block($block);
+
         }
 
         if ($block['blockName'] === 'core/html') {
