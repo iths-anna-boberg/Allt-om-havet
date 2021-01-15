@@ -31,13 +31,14 @@ $fortojning = get_field('fortojning');
       </div>
     </div>
     <div class="d-none d-md-flex flex-wrap">
-    <p class="mr-3"><strong>Adress:</strong> <?php echo $adress; ?></p>
-        <p class="mr-3"><strong>Läge:</strong> <?php echo $lage; ?></p>
-        <p class="mr-3"><strong>Sjökort:</strong> <?php echo $sjokort; ?></p>
-        <p class="mr-3"><strong>Tel:</strong> <?php echo $tel; ?></p>
-        <p class="mr-3"><strong>E-post:</strong> <?php echo $e_post; ?></p>
-        <p class="mr-3"><strong>Hamndjup:</strong> <?php echo $hamndjup; ?></p>
-        <p class="mr-3"><strong>Gästplatser:</strong> <?php echo $gastplatser; ?></p>
-        <p class="mr-3"><strong>Förtöjning:</strong> <?php echo $fortojning; ?></p>
-        <p class="mr-3"><strong>Hamnavgift:</strong> <?php echo $hamnavgift; ?></p>
+      <p class="mr-3"><strong>Adress:</strong> <?php echo $adress; ?></p>
+      <p class="mr-3"><strong>Longitud:</strong> <?php echo $long; ?></p>
+      <p class="mr-3"><strong>Latitud:</strong> <?php echo $lat; ?></p>
+      <p class="mr-3"><strong>Sjökort:</strong> <?php echo $sjokort; ?></p>
+      <p class="mr-3"><strong>Tel:</strong> <?php echo $tel; ?></p>
+      <p class="mr-3"><strong>E-post:</strong> <?php echo $e_post; ?></p>
+      <p class="mr-3"><strong>Hamndjup:</strong> <?php echo $hamndjup; ?></p>
+      <p class="mr-3"><strong>Gästplatser:</strong> <?php echo $gastplatser; ?></p>
+      <p class="mr-3"><strong>Förtöjning:</strong> <?php echo $fortojning; ?></p>
+      <p class="mr-3"><strong>Hamnavgift:</strong> <?php echo $hamnavgift; ?></p>
     </div>
