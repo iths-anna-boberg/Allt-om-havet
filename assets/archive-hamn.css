@@ -70,3 +70,15 @@ hr {
 .search-btn:focus {
     outline: none;
 }
+
+@media screen and (max-width: 520px){
+    .heading-wrapper {
+        flex-wrap: wrap;
+    }
+    .dock-search-form{
+        width: 100% !important;
+    } 
+    .search-field{
+        width: 100% !important;
+    } 
+}

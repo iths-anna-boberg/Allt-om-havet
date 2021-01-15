@@ -6,6 +6,7 @@
     wp_enqueue_style('aoh-custom', get_template_directory_uri().'/style.css', array('aoh-bootstrap'), 'all');
     wp_enqueue_style('aoh-event', get_template_directory_uri().'/assets/event.css', array('aoh-bootstrap'), 'all');
     wp_enqueue_style('aoh-archive-hamn', get_template_directory_uri().'/assets/archive-hamn.css', array('aoh-bootstrap'), 'all');
+    wp_enqueue_style('aoh-reviews', get_template_directory_uri().'/assets/reviews.css', array('aoh-bootstrap'), 'all');
     wp_enqueue_script('aoh-bootstrap-js', 'https://code.jquery.com/jquery-3.5.1.slim.min.js', array('jquery'), null, true);
     wp_enqueue_script('aoh-bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js', array('jquery'), null, true);
   }

@@ -23,6 +23,8 @@ if(have_posts()){
       </div>
     <?php get_template_part('template-parts/content', 'hamndata');?>
     <?php get_template_part('template-parts/content', 'hamn');?>
+    <?php get_template_part('template-parts/content', 'personal');?>
+    <?php ic_reviews() ?>
 </section>
     <?php
   }
