@@ -10,7 +10,7 @@ Author URI: https://github.com/iths-anna-boberg
 :root {
   --heading-font: "EB Garamond", serif;
   --text-font: "Work Sans", sans-serif;
-  --main-black: #545454;
+  --main-black: #000000;
   --main-darkblue: #425d87;
   --main-pink: #ffcdcd;
   --main-lightblue: #e4f2ff;
@@ -25,9 +25,15 @@ h1 {
   font-family: var(--heading-font);
   font-size: 70px;
   color: var(--main-black);
-  font-weight: 600;
+  font-weight: 400;
   font-variant: small-caps;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 500px){
+  h1 {
+    font-size: 50px !important;
+  }
 }
 
 h2 {
@@ -104,9 +110,10 @@ a[href^="tel"] {
   background-color: rgba(0, 0, 0, 0.13);
 }
 
-.nav-link {
+.nav-link a {
   font-family: var(--heading-font);
   text-transform: uppercase;
+  color: var(--main-white) !important;
 }
 
 .aoh-hero {
@@ -195,7 +202,24 @@ a[href^="tel"] {
 .aoh-footer {
   background-image: url("./mockup-assets/aoh-hero.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 200%;
+}
+
+#footer-widget-area > li {
+  display: flex;
+  justify-content: center;
+}
+
+#footer-widget-area > li > div{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#footer-widget-area > li > div > p {
+  padding: 0 15px;
+  color: var(--main-white);
+  margin: 0;
 }
 
 .aoh-404-content {
@@ -205,6 +229,7 @@ a[href^="tel"] {
   justify-content: center;
   align-items: center;
 }
+
 .aoh-404-content div {
   max-width: 30vw;
   display: inline-flex;
@@ -224,8 +249,14 @@ a[href^="tel"] {
   justify-content: center;
 }
 
-
 p.aoh-comments-title {
   background-color: lightblue;
   text-align: center;
+  
+.aoh-404-inner > div > img {
+  width: 300px;
+  height: 300px;
+}
+label.screen-reader-text {
+  display: none;
 }

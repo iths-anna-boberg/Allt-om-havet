@@ -1,6 +1,4 @@
-.tribe-events-view{
-  /* background-color: red !important; */
-}
+/* HEADER/SEARCHBAR */
 
 .tribe-common--breakpoint-medium.tribe-events .tribe-events-header--has-event-search .tribe-events-header__events-bar{
   width: 30%;
@@ -46,4 +44,369 @@
   /* background: transparent !important;
   content: none !important;
   border: none !important; */
+}
+
+/* LIST */
+.tribe-events-calendar-list__event-title-link {
+  font-weight: 500 !important;
+}
+.tribe-events-calendar-list__month-separator{
+  display: none !important;
+}
+
+.tribe-events-calendar-list__event-venue-title {
+  font-weight: 500 !important;
+}
+.tribe-events-calendar-list__event-date-tag{
+  display: none !important;
+}
+
+.tribe-events-calendar-list__event-details{
+  width: 100% !important;
+  flex-direction: row !important;
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 15px !important;
+}
+
+.tribe-common.tribe-events .tribe-events-calendar-list__event-description {
+  display: none !important;
+}
+
+.tribe-events-calendar-list div{
+  margin: 3px !important;
+}
+
+.tribe-events-calendar-list__event-row:nth-of-type(2n+2){
+  background-color: var(--main-lightblue) !important;
+}
+
+.tribe-events-calendar-list__event-venue-address{
+  display: none !important;
+}
+
+a.tribe-events-calendar-list__event-title-link{
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 15px !important;
+  color: black !important;
+  text-decoration: underline !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.tribe-events-calendar-list__event-header{
+  display: grid !important;
+  grid: 1fr / 200px 1fr 1fr;
+  gap: 20px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.tribe-events-calendar-list__event-wrapper{
+  padding: 0 !important;
+}
+
+.tribe-common-g-row--gutters > .tribe-common-g-col{
+  display: flex !important;
+  /* flex-direction: row !important; */
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin: 0 !important;
+}
+
+.tribe-events-calendar-list__event-header div, .tribe-events-calendar-list__event-header h3, .tribe-events-calendar-list__event-header address{
+  margin: 0 !important;
+}
+
+.tribe-events-calendar-list__event-cost{
+  margin: 0 !important;
+  width: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tribe-events-calendar-list-nav{
+  display: none !important;
+}
+
+.tribe-events .tribe-events-c-ical{
+  display: none !important;
+}
+
+header.tribe-events-header--has-event-search{
+  flex-direction: row !important;
+}
+
+.tribe-events-c-events-bar__views{
+  display: none !important;
+}
+
+button.tribe-events-c-events-bar__search-button{
+  border: none !important;
+  background-color: white !important;
+  margin: 0 !important;
+}
+
+button.tribe-events-c-search__button{
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+  border: 1px solid var(--main-darkblue);
+  color: var(--main-darkblue);
+  background-color: white;
+  transition: all .3s;
+}
+
+button.tribe-events-c-search__button:hover{
+  font-family: var(--heading-font);
+  border: 1px solid var(--main-darkblue);
+  color: white;
+  background-color: var(--main-darkblue);
+}
+
+#tribe-events-events-bar-keyword{
+  padding-left: 20px;
+}
+
+
+/* LATEST PAST EVENTS */
+
+.tribe-events-calendar-latest-past{
+  opacity: 0.7;
+}
+
+.tribe-events-calendar-latest-past__event-header{
+  display: grid !important;
+  grid: 1fr / 330px 1fr 1fr;
+  gap: 20px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.tribe-events-calendar-latest-past__event-description p{
+  display: none !important;
+}
+
+a.tribe-events-calendar-latest-past__event-title-link{
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 15px !important;
+  color: black !important;
+  text-decoration: underline !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.tribe-events-calendar-latset-past__event-details{
+  width: 100% !important;
+  flex-direction: row !important;
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 15px !important;
+}
+
+.tribe-events-calendar-latest-past__event-date-tag{
+  display: none !important;
+}
+
+article.tribe-events-calendar-latest-past__event{
+  display: flex !important;
+  /* flex-direction: row !important; */
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin: 0 !important;
+}
+
+.tribe-events-calendar-latest-past__month-separator{
+  display: none !important;
+}
+.tribe-common .tribe-common-anchor-thin:active, .tribe-common .tribe-common-anchor-thin:focus, .tribe-common .tribe-common-anchor-thin:hover {
+  border: none !important;
+}
+.tribe-common .tribe-common-anchor-thin {
+  border: none !important;
+  transition: none !important;
+}
+.tribe-event-date-start, .tribe-event-date-end {
+  font-family: var(--text-font);
+}
+
+.tribe-events-calendar-latest-past__event-date-tag{
+  display: none !important;
+}
+
+.tribe-events-calendar-latest-past__event-details{
+  width: 100% !important;
+  flex-direction: row !important;
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 15px !important;
+  padding: 0 !important;
+}
+
+.tribe-common.tribe-events .tribe-events-calendar-latest-past__event-description {
+  display: none !important;
+}
+
+.tribe-events-calendar-latest-past div{
+  margin: 3px !important;
+}
+
+.tribe-events-calendar-latest-past__event-row:nth-of-type(2n){
+  background-color: var(--main-lightblue) !important;
+}
+
+.tribe-events-calendar-latest-past__event-venue-address{
+  display: none !important;
+}
+
+.tribe-events-calendar-latest-past__event-wrapper{
+  padding: 0 !important;
+}
+
+.tribe-common-g-row--gutters > .tribe-common-g-col{
+  display: flex !important;
+  /* flex-direction: row !important; */
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin: 0 !important;
+}
+
+.tribe-events-calendar-latest-past__event-header div, .tribe-events-calendar-latest-past__event-header h3, .tribe-events-calendar-list__event-header address{
+  margin: 0 !important;
+}
+
+.tribe-events-calendar-latest-past__event-cost{
+  margin: 0 !important;
+}
+
+.tribe-events-calendar-latest-past__event-venue{
+  margin: 0 !important;
+}
+
+.tribe-events-calendar-latest-past-nav{
+  display: none !important;
+}
+
+.tribe-events .tribe-events-c-ical{
+  display: none !important;
+}
+
+h2.tribe-events-calendar-latest-past__heading{
+  font-size: 30px;
+  text-transform: capitalize;
+  font-variant: small-caps;
+}
+
+/* SINGLE-EVENT */
+
+h1.tribe-events-single-event-title{
+  font-family: var(--heading-font);
+  font-size: 70px;
+  color: var(--main-black);
+  font-weight: 600;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  border-bottom: 1px lightgrey solid;
+  margin-bottom: 30px;
+}
+
+h2.tribe-events-single-section-title{
+  font-family: var(--heading-font) !important;
+  font-size: 30px !important;
+  color: var(--main-black) !important;
+  font-weight: 500 !important;
+}
+
+#tribe-events-content{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.tribe-events-schedule h2{
+  font-family: var(--text-font);
+  font-size: 20px;
+}
+
+.tribe-events-c-small-cta__price {
+  font-family: var(--text-font);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+dt.tribe-organizer-url-label{
+  display: none;
+}
+
+.tribe-events-meta-group-details{
+  display: none;
+}
+
+.tribe-events-gmap{
+  display: none;
+}
+
+address span.tribe-delimiter{
+  display: none !important;
+}
+
+.tribe-events-single-event-description{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tribe-events-back{
+  margin: 20px 0 20px !important;
+}
+
+/* MEDIA QUERY LIST */
+
+@media screen and (max-width: 768px){
+  
+  div.tribe-events-c-small-cta{
+    display: none;
+  }
+  .tribe-events-calendar-list__event-header{
+    grid: 1fr / 150px 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 500px){
+  
+  .tribe-events-calendar-list__event-header{
+    grid: 1fr / 100px 1fr 1fr;
+  }
+
+  .tribe-events-calendar-list__event-header, .tribe-events-calendar-list__event-header a{
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width: 500px){
+  
+  .tribe-events-calendar-list__event-header{
+    grid: 1fr / 90px 1fr 1fr;
+    gap: 10px;
+  }
+
+  .tribe-events-calendar-list__event-header, .tribe-events-calendar-list__event-header a{
+    font-size: 13px !important;
+  }
+}
+
+.tribe-common-c-svgicon {
+  display: none !important;
+}
+
+.tribe-common .tribe-common-l-container {
+  padding: 4rem 0 !important;
+}
+
+input.tribe-events-c-search__input  {
+  font-family: "Work Sans" !important;
 }

@@ -5,13 +5,19 @@
 
                 echo "<img class='img-fluid' src=" . esc_url(get_the_post_thumbnail_url()) . " >";
             }
+                      
         ?>
 
         <?php the_content(); ?>
     </div>
+    
     <div class="col-sm-4">
         <div class="p-4 aoh-event-box aoh-box-lightblue">
             <?php get_template_part('template-parts/content', 'faciliteter');?>
         </div>
+        <div class="mt-5 p-4 aoh-event-box aoh-box-lightblue">
+          <?php dynamic_sidebar('hamn-page-event-box');?>
+        </div>
     </div>
+    
 </div>

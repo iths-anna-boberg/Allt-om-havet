@@ -28,6 +28,7 @@ if ( empty( $disable_event_search ) ) {
 }
 ?>
 
+<section class="container">
   <div
     <?php tribe_classes( $container_classes ); ?>
     data-js="tribe-events-view"
@@ -53,7 +54,7 @@ if ( empty( $disable_event_search ) ) {
 
         <header <?php tribe_classes( $header_classes ); ?>>
 
-          <h1>Events</h1>
+          <h1>Evenemang</h1>
 
           <?php $this->template( 'components/messages' ); ?>
 
@@ -71,8 +72,6 @@ if ( empty( $disable_event_search ) ) {
         <?php foreach ( $events as $event ) : ?>
           <?php $this->setup_postdata( $event ); ?>
 
-          <?php $this->template( 'list/month-separator', [ 'event' => $event ] ); ?>
-
           <?php $this->template( 'list/event', [ 'event' => $event ] ); ?>
 
         <?php endforeach; ?>
@@ -87,5 +86,6 @@ if ( empty( $disable_event_search ) ) {
 
     </div>
   </div>
+</section>
 
 <?php $this->template( 'components/breakpoints' ); ?>
