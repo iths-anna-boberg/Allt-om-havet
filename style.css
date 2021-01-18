@@ -246,3 +246,30 @@ a[href^="tel"] {
   flex-direction: column;
   justify-content: center;
 }
+
+/* KONTAKTFORUMLÄR */
+
+div.wpforms-container-full .wpforms-form{
+  color: white;
+  font-family: var(--heading-font);
+  background-color: var(--main-darkblue);
+  padding: 2rem;
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"]{
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid var(--main-white);
+  color: var(--main-white);
+  padding: 5px 20px;
+}
+
+.wpforms-submit-container:after{
+  margin-left: 1rem;
+  content: "*obligatorisk info";
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-required-label{
+  color: white;
+}
