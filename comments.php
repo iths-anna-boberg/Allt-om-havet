@@ -1,17 +1,48 @@
-<?php if($comments) : ?>
-	<ol>
+<?php
 
-  	<?php foreach($comments as $comment) : ?>
-		<li id="comment-<?php comment_ID(); ?>">
-			<?php if ($comment->comment_approved == '0') : ?>
-				<p>Din kommentar inväntar godkännande.</p>
-			<?php endif; ?>
-			<?php comment_text(); ?>
-			<cite><?php comment_type(); ?> av <?php comment_author_link(); ?> <?php comment_date(); ?> vid <?php comment_time(); ?></cite>
-		</li>
-	<?php endforeach; ?>
+if ( post_password_required() ) {
+	return;
+}
+?>
 
-	</ol>
-<?php else : ?>
-	<p>Inga kommentarer än.</p>
-<?php endif; ?>
+<div id="comments" class="comments-area">
+
+	<?php
+	if ( have_comments() ) : ?>
+		<p class="aoh-comments-title">
+			<?php _e('Kommentarer', 'noto-simple'); ?>
+		</p>
+
+		<?php
+        the_comments_navigation(array(
+            'prev_text' =>'<i class="material-icons">navigate_before</i><span class="hidden-sm">' . __('Äldre kommentarer', 'noto-simple') . '</span>',
+            'next_text' => '<span class="hidden-sm">' . __('Senare kommentarer', 'noto-simple') . '</span><i class="material-icons">navigate_next</i>',
+        )); ?>
+
+		<ol class="comment-list">
+			<?php
+				wp_list_comments( array(
+					'style'      => 'ul',
+					'short_ping' => true,
+                    'avatar_size' => 32,
+				) );
+			?>
+		</ol>
+
+		<?php 
+        the_comments_navigation(array(
+            'prev_text' =>'<i class="material-icons">navigate_before</i><span class="hidden-sm hidden-md">' . __('Äldre kommentarer', 'noto-simple') . '</span>',
+            'next_text' => '<span class="hidden-sm hidden-md">' . __('Senare kommentarer', 'noto-simple') . '</span><i class="material-icons">navigate_next</i>',
+        ));
+
+		if ( ! comments_open() ) : ?>
+			<p class="no-comments"><?php esc_html_e( 'Kommentarsfältet stängt', 'noto-simple' ); ?></p>
+		<?php
+		endif;
+
+	endif;
+
+	comment_form();
+	?>
+
+</div>

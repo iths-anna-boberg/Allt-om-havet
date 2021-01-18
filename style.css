@@ -248,6 +248,11 @@ a[href^="tel"] {
   flex-direction: column;
   justify-content: center;
 }
+
+p.aoh-comments-title {
+  background-color: lightblue;
+  text-align: center;
+  
 .aoh-404-inner > div > img {
   width: 300px;
   height: 300px;
