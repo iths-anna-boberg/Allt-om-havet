@@ -116,6 +116,7 @@
         'menu_icon' => 'dashicons-palmtree',
         'can_export' => true,
         'has_archive' => true,
+        "rewrite" => array("slug" => 'hamnar'),
         'exclude_from_search' => false,
         'publicly_queryable' => true,
         'capability_type' => 'post',
