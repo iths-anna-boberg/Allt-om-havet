@@ -10,7 +10,7 @@ get_header('small');
     <h1>Hamnar</h1>
     <form class="dock-search-form" role="search" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
         <input class="search-field" type="text" name="s" placeholder="Sök Hamnar"/>
-        <input type="hidden" name="post_type" value="hamn" /> <!-- // hidden 'players' value -->
+        <input type="hidden" name="post_type" value="hamn" /> <!-- // hidden 'docks' value -->
         <input class="search-btn" type="submit" alt="Search" value="" />
     </form>
   </div>
