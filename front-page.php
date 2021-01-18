@@ -17,12 +17,13 @@
         }
       ?>
 
-      <?php 
       
-        dynamic_sidebar('start-page-event-box');
-      
-      ?>
 
+      </article>
+      <article class="col-sm-4 mt-5">
+        <div class="p-4 aoh-event-box aoh-box-lightblue">
+          <?php dynamic_sidebar('start-page-event-box');?>
+        </div>
       </article>
     </div>
   </section>

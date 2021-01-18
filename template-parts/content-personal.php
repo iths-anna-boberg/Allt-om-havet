@@ -4,27 +4,7 @@ $personal_2 = get_field('personal_2');
 $personal_3 = get_field('personal_3');
 $personal_4 = get_field('personal_4');
 ?>
-    <div class="row p-3">
-      <h2>Kontakt</h2>
-    </div>
-    <?php 
-    $blocks = parse_blocks( get_the_content() );
-    // echo '<pre>',print_r($blocks),'</pre>';
-    echo "<div class='d-flex aoh-contact-wrapper'>";
-    foreach ($blocks as $block) {
-        
-        if ($block['blockName'] === 'core/shortcode') {
-          // echo $block['innerHTML'];
-          echo do_shortcode( $block['innerHTML'] );
-        }
-
-        if ($block['blockName'] === 'core/html') {
-          echo render_block($block);
-        }
-        
-    } 
-    echo "</div>";
-    ?>
+    
     <div class="d-flex flex-wrap justify-content-evenly personal">
        
       <?php 
