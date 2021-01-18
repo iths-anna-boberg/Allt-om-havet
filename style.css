@@ -258,6 +258,11 @@ label.screen-reader-text {
   display: none;
 }
 
+.custom-logo, .aoh-footer-logo{
+  width: 200px;
+  height: auto;
+}
+
 /* KONTAKTFORUMLÄR */
 
 div.wpforms-container-full .wpforms-form{
