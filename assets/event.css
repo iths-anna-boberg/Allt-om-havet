@@ -47,11 +47,16 @@
 }
 
 /* LIST */
-
+.tribe-events-calendar-list__event-title-link {
+  font-weight: 500 !important;
+}
 .tribe-events-calendar-list__month-separator{
   display: none !important;
 }
 
+.tribe-events-calendar-list__event-venue-title {
+  font-weight: 500 !important;
+}
 .tribe-events-calendar-list__event-date-tag{
   display: none !important;
 }
@@ -119,6 +124,9 @@ a.tribe-events-calendar-list__event-title-link{
 
 .tribe-events-calendar-list__event-cost{
   margin: 0 !important;
+  width: 60px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .tribe-events-calendar-list-nav{
@@ -218,6 +226,16 @@ article.tribe-events-calendar-latest-past__event{
 .tribe-events-calendar-latest-past__month-separator{
   display: none !important;
 }
+.tribe-common .tribe-common-anchor-thin:active, .tribe-common .tribe-common-anchor-thin:focus, .tribe-common .tribe-common-anchor-thin:hover {
+  border: none !important;
+}
+.tribe-common .tribe-common-anchor-thin {
+  border: none !important;
+  transition: none !important;
+}
+.tribe-event-date-start, .tribe-event-date-end {
+  font-family: var(--text-font);
+}
 
 .tribe-events-calendar-latest-past__event-date-tag{
   display: none !important;
@@ -239,7 +257,7 @@ article.tribe-events-calendar-latest-past__event{
   margin: 3px !important;
 }
 
-.tribe-events-calendar-latest-past__event-row:nth-of-type(2n+3){
+.tribe-events-calendar-latest-past__event-row:nth-of-type(2n){
   background-color: var(--main-lightblue) !important;
 }
 
@@ -315,10 +333,10 @@ h2.tribe-events-single-section-title{
   font-size: 20px;
 }
 
-span.tribe-events-cost{
+.tribe-events-c-small-cta__price {
   font-family: var(--text-font);
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 dt.tribe-organizer-url-label{
@@ -379,4 +397,16 @@ address span.tribe-delimiter{
   .tribe-events-calendar-list__event-header, .tribe-events-calendar-list__event-header a{
     font-size: 13px !important;
   }
+}
+
+.tribe-common-c-svgicon {
+  display: none !important;
+}
+
+.tribe-common .tribe-common-l-container {
+  padding: 4rem 0 !important;
+}
+
+input.tribe-events-c-search__input  {
+  font-family: "Work Sans" !important;
 }

@@ -25,7 +25,7 @@ h1 {
   font-family: var(--heading-font);
   font-size: 70px;
   color: var(--main-black);
-  font-weight: 600;
+  font-weight: 400;
   font-variant: small-caps;
   text-transform: capitalize;
 }
@@ -110,9 +110,10 @@ a[href^="tel"] {
   background-color: rgba(0, 0, 0, 0.13);
 }
 
-.nav-link {
+.nav-link a {
   font-family: var(--heading-font);
   text-transform: uppercase;
+  color: var(--main-white) !important;
 }
 
 .aoh-hero {
@@ -228,6 +229,7 @@ a[href^="tel"] {
   justify-content: center;
   align-items: center;
 }
+
 .aoh-404-content div {
   max-width: 30vw;
   display: inline-flex;
@@ -245,6 +247,15 @@ a[href^="tel"] {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.aoh-404-inner > div > img {
+  width: 300px;
+  height: 300px;
+}
+
+label.screen-reader-text {
+  display: none;
 }
 
 /* KONTAKTFORUMLÄR */
@@ -273,3 +284,4 @@ div.wpforms-container-full .wpforms-form button[type="submit"]{
 div.wpforms-container-full .wpforms-form .wpforms-required-label{
   color: white;
 }
+
