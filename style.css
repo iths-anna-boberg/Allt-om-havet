@@ -249,6 +249,8 @@ a[href^="tel"] {
   justify-content: center;
 }
 
+
+
 p.aoh-comments-title {
   background-color: lightblue;
   text-align: center;
@@ -257,6 +259,40 @@ p.aoh-comments-title {
   width: 300px;
   height: 300px;
 }
+
 label.screen-reader-text {
   display: none;
 }
+
+.custom-logo, .aoh-footer-logo{
+  width: 200px;
+  height: auto;
+}
+
+/* KONTAKTFORUMLÄR */
+
+div.wpforms-container-full .wpforms-form{
+  color: white;
+  font-family: var(--heading-font);
+  background-color: var(--main-darkblue);
+  padding: 2rem;
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"]{
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid var(--main-white);
+  color: var(--main-white);
+  padding: 5px 20px;
+}
+
+.wpforms-submit-container:after{
+  margin-left: 1rem;
+  content: "*obligatorisk info";
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-required-label{
+  color: white;
+}
+
