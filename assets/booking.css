@@ -1,0 +1,140 @@
+.wp-block-booking-booking {
+    display: flex;
+    justify-content: space-around;
+    background-color: #425D87;
+}
+
+.wpbc_booking_form_structure {
+    display: flex;
+}
+
+.wpbc_structure_calendar {
+    margin: auto;
+    padding-right: 10rem;
+}
+
+.wpbc_structure_form {
+    margin: 3rem;
+}
+
+#booking_form_div1 > div.wpbc_booking_form_structure.wpbc_vertical > div.wpbc_structure_form > div:nth-child(5) {
+    display: none;
+}
+
+.datepick-header {
+    background-color: white;
+}
+
+#booking_form_div1 > div.wpbc_booking_form_structure.wpbc_vertical > div.wpbc_structure_calendar > div:nth-child(2) {
+    display: none;
+}
+
+.control-label {
+    color: white;
+    font-family: 'EB Garamond';
+}
+
+#submiting1 {
+    display: flex;
+    justify-content: center;
+}
+
+#submiting1 > div {
+    background-color: #425D87;
+    color: white;
+    border: none;
+    font-weight: bold;
+    text-align: center !important;
+}
+
+.wpdev-help-message {
+    background-color: #425D87;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+} 
+
+.wpdev-help-message.alert.alert-warning, .wpdev-help-message .alert.alert-warning {
+    background-color: #425D87 !important;
+    color: white;
+    border-color: white;
+    border-left: white;
+    margin: 0 !important;
+}
+
+.alert-success  {
+    margin: 0 !important;
+}
+
+.wpdevelop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.wpdevelop label {
+    font-weight: 400 !important;
+}
+
+.wpdevelop .btn-default {
+    background-color: #425D87 !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: white !important;
+    font-family: 'EB Garamond' !important;
+    border: 1px solid white !important;
+    border-radius: 0px !important;
+    font-size: 24px !important;
+    padding: 8px !important;
+    width: 7rem;
+    font-weight: 400 !important;
+    opacity: 0.9;
+    transform: scale(1);
+}
+
+.wpdevelop .btn-default:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+.wpdevelop .btn-default:active {
+    opacity: 1;
+}
+
+.wpbc_vertical {
+    position: relative;
+}
+
+.wpbc_vertical:after {
+    content: "Välj datum";
+    color: white;
+    position: absolute;
+    font-family: 'EB Garamond';
+    font-size: 28px;
+    transform: translateY(+50px);
+}
+
+@media only screen and (max-width: 1000px) {
+    .wpbc_vertical {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .wpbc_structure_calendar {
+        margin: 0;
+        padding-right: 0rem;
+        display: flex;
+        justify-content: center;
+    }
+    .wpbc_vertical:after {
+      position: none;
+      content: none; 
+    }
+    div.form-group:nth-child(7) {
+        display: flex;
+        justify-content: center; 
+    }
+  }
