@@ -29,6 +29,10 @@ get_header('small');
 
                 <?php the_content(); ?>
 
+                <hr>
+
+                <?php if( comments_open() ){ comments_template(); }?>
+
             </article>
         <?php endwhile;
 

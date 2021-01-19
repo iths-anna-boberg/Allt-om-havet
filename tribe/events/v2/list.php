@@ -54,7 +54,7 @@ if ( empty( $disable_event_search ) ) {
 
         <header <?php tribe_classes( $header_classes ); ?>>
 
-          <h1>Events</h1>
+          <h1>Evenemang</h1>
 
           <?php $this->template( 'components/messages' ); ?>
 
