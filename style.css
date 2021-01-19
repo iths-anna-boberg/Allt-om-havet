@@ -107,6 +107,17 @@ a[href^="tel"] {
   padding: 5px 20px;
 }
 
+.aoh-link-btn:hover {
+  color: var(--main-white);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.aoh-thumbnail-hamn {
+  width: 300px;
+  height: 200px;
+}
+
 .aoh-max-width-250px {
   max-width: 250px;
 }
