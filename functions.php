@@ -10,6 +10,7 @@
     wp_enqueue_style('aoh-booking', get_template_directory_uri().'/assets/booking.css', array('aoh-bootstrap'), 'all');
     wp_enqueue_script('aoh-bootstrap-js', 'https://code.jquery.com/jquery-3.5.1.slim.min.js', array('jquery'), null, true);
     wp_enqueue_script('aoh-bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js', array('jquery'), null, true);
+    wp_enqueue_script('aoh-closest-to-user', get_template_directory_uri().'/scripts/closest_to_user.js', array('jquery'), null, true);
   }
 
   add_action('wp_enqueue_scripts', 'aoh_enqueue_scripts');
@@ -129,6 +130,44 @@
 
   add_action('init', 'aoh_create_post_type_dock');
 
+  function aoh_get_all_docks_coordinates() {
+    $args = array(
+      'post_content',
+      'post_status'=>'publish',
+      'post_title',
+      'post_type'=>'hamn',
+      'ID',
+      'meta_key'=>'lat',
+      'meta_key'=>'long'
+    );
+
+    $posts_arr = get_posts($args);
+
+    $posts_info = array();
+    
+    forEach($posts_arr as $post){
+      $lat = get_field('lat', $post->ID);
+      $long = get_field('long', $post->ID);
+
+      $post_info = array(
+        'id'=>$post->ID,
+        'post_title'=>$post->post_title,
+        'latitude'=>$lat,
+        'longitude'=>$long,
+        'permalink'=>get_permalink($post)
+      );
+
+      array_push($posts_info, $post_info);
+    }
+
+    return $posts_info;
+  }
+
+  add_action('rest_api_init', function(){
+    register_rest_route('alltomhavet/v1', 'get_dock_coords', array(
+      'methods'=>'get',
+      'callback'=>'aoh_get_all_docks_coordinates'));
+  });
 // Archive-hamnar sök
 
   function template_chooser( $template ){
