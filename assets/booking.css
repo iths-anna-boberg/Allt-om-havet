@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-around;
     background-color: #425D87;
+    font-family: 'EB Garamond' !important;
 }
 
 .wpbc_booking_form_structure {
@@ -11,10 +12,6 @@
 .wpbc_structure_calendar {
     margin: auto;
     padding-right: 10rem;
-}
-
-.wpbc_structure_form {
-    margin: 3rem;
 }
 
 #booking_form_div1 > div.wpbc_booking_form_structure.wpbc_vertical > div.wpbc_structure_form > div:nth-child(5) {
@@ -111,30 +108,48 @@
 .wpbc_vertical:after {
     content: "Välj datum";
     color: white;
-    position: absolute;
     font-family: 'EB Garamond';
     font-size: 28px;
-    transform: translateY(+50px);
+    position: absolute;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 990px) {
     .wpbc_vertical {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
     }
+
     .wpbc_structure_calendar {
-        margin: 0;
         padding-right: 0rem;
         display: flex;
         justify-content: center;
+        flex-direction: column-reverse;
     }
+
+    .wpbc_structure_calendar:after {
+        content: "Välj datum";
+        color: white;
+        font-family: 'EB Garamond';
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+    }
+
     .wpbc_vertical:after {
       position: none;
       content: none; 
     }
+
     div.form-group:nth-child(7) {
         display: flex;
         justify-content: center; 
+    }
+
+  }
+
+  @media only screen and (max-width: 770px) {
+    .wpbc_structure_calendar {
+        margin: 0;
     }
   }
