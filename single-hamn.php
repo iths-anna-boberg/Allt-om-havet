@@ -12,12 +12,12 @@ if(have_posts()){
 
 <section class='container aoh-main-container'>
       <div class='row aoh-harbor-heading'>
-        <div class="col-sm-9 d-sm-flex align-items-end">
+        <div class="harbor-title col-sm-9 d-sm-flex">
           <h1><?php the_title(); ?></h1>
           <?php get_template_part('template-parts/content', 'lan');?>
         </div>
       </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 aoh-weather-container">
           <?php get_template_part('template-parts/content', 'weather');?>
         </div>
       </div>

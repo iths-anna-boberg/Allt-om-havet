@@ -456,3 +456,7 @@ input.tribe-events-c-search__input  {
   min-width: 300px !important;
   border-radius: 0 !important;
 }
+
+.tribe-events-calendar-list div {
+  margin: 5px !important;
+}
