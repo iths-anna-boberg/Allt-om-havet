@@ -32,6 +32,7 @@
           $three_posts = array_slice($posts, 0, 3);
 
           foreach ($three_posts as $rating_card) {
+            
             echo '  <div class="col d-flex flex-column align-items-center">
                         <img class="aoh-thumbnail-hamn" src=' . $rating_card["img_link"] .'  alt=' . $rating_card["post_title"] . ' >
                         <h4 class="mt-2"> ' . $rating_card["post_title"] . '</h6>
