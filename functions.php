@@ -7,9 +7,12 @@
     wp_enqueue_style('aoh-event', get_template_directory_uri().'/assets/event.css', array('aoh-bootstrap'), 'all');
     wp_enqueue_style('aoh-archive-hamn', get_template_directory_uri().'/assets/archive-hamn.css', array('aoh-bootstrap'), 'all');
     wp_enqueue_style('aoh-reviews', get_template_directory_uri().'/assets/reviews.css', array('aoh-bootstrap'), 'all');
+    wp_enqueue_style('aoh-booking', get_template_directory_uri().'/assets/booking.css', array('aoh-bootstrap'), 'all');
+
     wp_enqueue_script('aoh-bootstrap-jq', 'https://code.jquery.com/jquery-3.2.1.slim.min.js', array('jquery'), null, true);
     wp_enqueue_script('aoh-bootstrap-popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', array('jquery'), null, true);
     wp_enqueue_script('aoh-bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), null, true);
+
   }
 
 
@@ -130,6 +133,44 @@
 
   add_action('init', 'aoh_create_post_type_dock');
 
+  function aoh_get_all_docks_coordinates() {
+    $args = array(
+      'post_content',
+      'post_status'=>'publish',
+      'post_title',
+      'post_type'=>'hamn',
+      'ID',
+      'meta_key'=>'lat',
+      'meta_key'=>'long'
+    );
+
+    $posts_arr = get_posts($args);
+
+    $posts_info = array();
+    
+    forEach($posts_arr as $post){
+      $lat = get_field('lat', $post->ID);
+      $long = get_field('long', $post->ID);
+
+      $post_info = array(
+        'id'=>$post->ID,
+        'post_title'=>$post->post_title,
+        'latitude'=>$lat,
+        'longitude'=>$long,
+        'permalink'=>get_permalink($post)
+      );
+
+      array_push($posts_info, $post_info);
+    }
+
+    return $posts_info;
+  }
+
+  add_action('rest_api_init', function(){
+    register_rest_route('alltomhavet/v1', 'get_dock_coords', array(
+      'methods'=>'get',
+      'callback'=>'aoh_get_all_docks_coordinates'));
+  });
 // Archive-hamnar sök
 
   function template_chooser( $template ){

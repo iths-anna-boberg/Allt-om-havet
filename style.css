@@ -38,9 +38,10 @@ h1 {
 
 h2 {
   font-family: var(--heading-font);
-  font-size: 60px;
+  font-size: 50px;
   color: var(--main-black);
   font-weight: 500;
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -72,7 +73,7 @@ h6 {
 
 p {
   font-family: var(--text-font);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 a[href^="tel"] {
@@ -104,6 +105,10 @@ a[href^="tel"] {
   border: 1px solid var(--main-white);
   color: var(--main-white);
   padding: 5px 20px;
+}
+
+.aoh-max-width-250px {
+  max-width: 250px;
 }
 
 .aoh-navbar {
@@ -248,10 +253,50 @@ a[href^="tel"] {
   flex-direction: column;
   justify-content: center;
 }
+
+p.aoh-comments-title {
+  background-color: lightblue;
+  text-align: center;
+}
+
 .aoh-404-inner > div > img {
   width: 300px;
   height: 300px;
 }
+
 label.screen-reader-text {
   display: none;
 }
+
+.custom-logo, .aoh-footer-logo{
+  width: 200px;
+  height: auto;
+}
+
+/* KONTAKTFORUMLÄR */
+
+div.wpforms-container-full .wpforms-form{
+  color: white;
+  font-family: var(--heading-font);
+  background-color: var(--main-darkblue);
+  padding: 2rem;
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"]{
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid var(--main-white);
+  color: var(--main-white);
+  padding: 5px 20px;
+}
+
+.wpforms-submit-container:after{
+  margin-left: 1rem;
+  content: "*obligatorisk info";
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-required-label{
+  color: white;
+}
+
