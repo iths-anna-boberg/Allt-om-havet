@@ -36,7 +36,7 @@
             
             echo '  <div class="col d-flex flex-column align-items-center">
                         <img class="aoh-thumbnail-hamn" src=' . $rating_card["img_link"] .'  alt=' . $rating_card["post_title"] . ' >
-                        <h4 class="mt-2"> ' . $rating_card["post_title"] . '</h6>
+                        <h6 class="mt-2"> ' . $rating_card["post_title"] . '</h6>
                         <div class="d-flex justify-content-start">
                         <h6>Betyg: </h6> <span>' , ic_get_reviews_average_html($rating_card["id"]) , '</span>
                         </div>
