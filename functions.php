@@ -8,10 +8,10 @@
     wp_enqueue_style('aoh-archive-hamn', get_template_directory_uri().'/assets/archive-hamn.css', array('aoh-bootstrap'), 'all');
     wp_enqueue_style('aoh-reviews', get_template_directory_uri().'/assets/reviews.css', array('aoh-bootstrap'), 'all');
     wp_enqueue_style('aoh-booking', get_template_directory_uri().'/assets/booking.css', array('aoh-bootstrap'), 'all');
-
     wp_enqueue_script('aoh-bootstrap-jq', 'https://code.jquery.com/jquery-3.2.1.slim.min.js', array('jquery'), null, true);
     wp_enqueue_script('aoh-bootstrap-popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', array('jquery'), null, true);
     wp_enqueue_script('aoh-bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), null, true);
+    wp_enqueue_script('aoh-closest-to-user', get_template_directory_uri().'/scripts/closest_to_user.js', array('jquery'), null, true);
 
   }
 

@@ -140,7 +140,7 @@ button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 80vh;
+
 }
 
 .aoh-hero-sm {
@@ -150,6 +150,10 @@ button {
 }
 
 .aoh-jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
@@ -165,6 +169,32 @@ button {
   max-height: 600px;
   object-fit: cover;
 }
+
+@media screen and (min-width: 2000px){
+  .aoh-jumbotron h1 {
+    font-size: 72px;
+  }
+  .aoh-jumbotron {
+    height: 50vh;
+  }
+
+
+
+}
+
+@media screen and (max-width: 500px){
+  .aoh-jumbotron h1 {
+    font-size: 42px !important;
+  }
+  .aoh-hero-preamble {
+    font-size: 28px !important;
+  }
+  .aoh-jumbotron {
+    height: 70vh;
+  }
+
+}
+
 
 .aoh-hero-heading {
   font-family: var(--heading-font);
