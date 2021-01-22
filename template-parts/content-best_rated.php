@@ -28,6 +28,7 @@
           }
       
           array_multisort(array_column($posts, 'rating'), SORT_DESC, $posts);
+
           
           $three_posts = array_slice($posts, 0, 3);
 
@@ -42,6 +43,8 @@
                         <a class="mb-5 aoh-btn-solid aoh-link-btn" href=' . $rating_card["post_link"] .'>' . $rating_card["post_title"] .'</a>
                         
                     </div>  ';
+
           }
+
       ?>
       </article>

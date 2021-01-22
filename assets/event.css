@@ -1,3 +1,5 @@
+/* För att denna css-fil ska funka som sig bör ska man  avaktivera The Events Calendars egna css. Det gör man på the-events-calendar -> src -> resources -> css. Döp om denna css-folder till t.ex. "css-deactivated" */
+
 /* HEADER/SEARCHBAR */
 
 .tribe-common--breakpoint-medium.tribe-events .tribe-events-header--has-event-search .tribe-events-header__events-bar{
@@ -16,8 +18,11 @@
   height: 20px !important;
 }
 
-.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__input-group{
+.tribe-events-c-events-bar__search-form{
   position: relative !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__button {
@@ -27,6 +32,9 @@
   flex-direction: row !important;
   align-items: center !important;
   right: 10px;
+  align-self: center;
+  padding: 0;
+  transition: none;
   /* background: transparent !important;
   content: none !important;
   border: none !important; */
@@ -35,11 +43,11 @@
 .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__button::after {
   content: "" !important;
   display: block !important;
-  width: 14px !important;
-  height: 14px !important;
+  width: 15px !important;
+  height: 15px !important;
   background-image: url("search.png");
   background-size: cover !important;
-  background-position: center !important;
+  /* background-position: center !important; */
   visibility: visible !important;
   /* background: transparent !important;
   content: none !important;
@@ -138,7 +146,8 @@ a.tribe-events-calendar-list__event-title-link{
 }
 
 header.tribe-events-header--has-event-search{
-  flex-direction: row !important;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tribe-events-c-events-bar__views{
@@ -169,6 +178,10 @@ button.tribe-events-c-search__button:hover{
 
 #tribe-events-events-bar-keyword{
   padding-left: 20px;
+}
+
+.tribe-events-spinner-medium{
+  display: none;
 }
 
 
@@ -366,13 +379,31 @@ address span.tribe-delimiter{
 
 /* MEDIA QUERY LIST */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 990px){
   
   div.tribe-events-c-small-cta{
     display: none;
   }
   .tribe-events-calendar-list__event-header{
     grid: 1fr / 150px 1fr 1fr;
+  }
+
+  header.tribe-events-header--has-event-search {
+    flex-direction: column;
+  }
+
+  .tribe-events-c-events-bar__search-form{
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .border-bottom{
+    visibility: none;
+    margin-bottom: 20px !important;
+  }
+
+  .tribe-events-c-search__input-group{
+    width: 100%;
   }
 }
 
@@ -385,6 +416,7 @@ address span.tribe-delimiter{
   .tribe-events-calendar-list__event-header, .tribe-events-calendar-list__event-header a{
     font-size: 13px !important;
   }
+
 }
 
 @media screen and (max-width: 500px){
