@@ -1,4 +1,4 @@
-<article class="col-sm-12 d-flex flex-wrap justify-content-between pt-5 aoh-box-lightblue">
+<article class="col-sm-12 d-flex flex-wrap justify-content-between pt-5 mb-5 aoh-box-lightblue">
       <?php
       
         $args = array(
@@ -34,11 +34,11 @@
         foreach ($posts as $rating_card) {
             echo '  <div class="col d-flex flex-column align-items-center">
                         <img class="aoh-thumbnail-hamn" src=' . $rating_card["img_link"] .'  alt=' . $rating_card["post_title"] . ' >
-                        <h6> ' . $rating_card["post_title"] . '</h6>
-                        <div class="d-flex justify-content-start"
+                        <h4 class="mt-2"> ' . $rating_card["post_title"] . '</h6>
+                        <div class="d-flex justify-content-start">
                         <h6>Betyg: </h6> <span>' , ic_get_reviews_average_html($rating_card["id"]) , '</span>
                         </div>
-                        <a class="aoh-btn-solid aoh-link-btn" href=' . $rating_card["post_link"] .'>' . $rating_card["post_title"] .'</a>
+                        <a class="mb-5 aoh-btn-solid aoh-link-btn" href=' . $rating_card["post_link"] .'>' . $rating_card["post_title"] .'</a>
                         
                     </div>  ';
         }

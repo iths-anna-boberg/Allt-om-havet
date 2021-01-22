@@ -110,7 +110,6 @@ a[href^="tel"] {
 .aoh-link-btn:hover {
   color: var(--main-white);
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .aoh-thumbnail-hamn {
