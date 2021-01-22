@@ -140,7 +140,7 @@ button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 80vh;
+
 }
 
 .aoh-hero-sm {
@@ -150,6 +150,10 @@ button {
 }
 
 .aoh-jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
