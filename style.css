@@ -163,6 +163,13 @@ button {
     rgba(0, 0, 0, 0) 100%
   );
 }
+
+.carousel-item > img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
 @media screen and (min-width: 2000px){
   .aoh-jumbotron h1 {
     font-size: 72px;
@@ -171,7 +178,10 @@ button {
     height: 50vh;
   }
 
+
+
 }
+
 @media screen and (max-width: 500px){
   .aoh-jumbotron h1 {
     font-size: 42px !important;
