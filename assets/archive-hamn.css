@@ -19,6 +19,7 @@ hr {
 
 .hamn-row {
     align-items: center !important;
+    padding: 12px 10px !important;
 }
 .search-row:nth-child(2n){
     background-color: var(--main-lightblue);

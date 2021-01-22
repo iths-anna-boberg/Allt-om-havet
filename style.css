@@ -46,8 +46,8 @@ h2 {
   font-family: var(--heading-font);
   font-size: 50px;
   color: var(--main-black);
-  font-weight: 500;
-  padding-bottom: 20px;
+  font-weight: 300;
+  padding: 2rem 0 0.5rem 0;
 }
 
 h3 {
@@ -348,4 +348,43 @@ div.wpforms-container-full .wpforms-form button[type="submit"]{
 div.wpforms-container-full .wpforms-form .wpforms-required-label{
   color: white;
 }
+/* Harbor title alignment*/
+.harbor-title h1, .harbor-title h3 {
+  display: inline;
+  vertical-align: baseline !important;
+  margin-bottom: 0;
+}
 
+.harbor-title h1 {
+  margin: 0 2rem 0 0;
+}
+.harbor-title h3 {
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+.aoh-harbor-heading {
+  margin-bottom: 0 !important;
+}
+.harbor-title {
+  display: inline-flex !important;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+/* Weather box*/
+.aoh-weather-container {
+  margin-bottom: 10px;
+  border-left: 1px solid rgb(230, 230, 230) !important;
+}
+
+/* Om oss adress */
+
+.aoh-address-box {
+  border: 1px solid gray !important;
+  display: flex !important;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-left: 4rem;
+}
