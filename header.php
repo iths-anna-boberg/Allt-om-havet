@@ -37,7 +37,7 @@
       <div class="container aoh-hero-cta">
         <h1 class="aoh-hero-heading">Välkommen till Allt om havet!</h1>
         <p class="aoh-hero-preamble">Här finns hela Sveriges gästhamnar</p>
-        <p><span class="aoh-nearest-dock"></span></p>
+        <p class="aoh-hero-preamble"><span class="aoh-nearest-dock"></span></p>
         <a class="aoh-btn-solid" href="./hamnar">Boka hamnplats <span class="aoh-nearest-dock-btn"></span></a>
       </div>
     </div>
