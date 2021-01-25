@@ -28,16 +28,16 @@
             )
           );
         ?>
-        <button class="aoh-btn-outline">
+        <a class="aoh-btn-outline" href="./hamnar">
           Boka hamnplats
-        </button>
+        </a>
       </div>
     </nav>
     <div class="jumbotron aoh-jumbotron">
       <div class="container aoh-hero-cta">
         <h1 class="aoh-hero-heading">Sover du också på lektionstid?</h1>
         <p class="aoh-hero-preamble">Boka en hamnplats hos oss istället.</p>
-        <button class="aoh-btn-solid">Hitta hamnplats</button>
+        <a class="aoh-btn-solid" href="./hamnar">Boka hamnplats</a>
       </div>
     </div>
   </header>

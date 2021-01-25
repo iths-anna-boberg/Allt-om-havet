@@ -2,6 +2,10 @@
     display: flex;
     flex-wrap: wrap;
 } */
+.review-rating {
+    transform: scale(70%);
+}
+
 .review-rating > .rating-on::before {
     color: #FDBC4B;
 }
