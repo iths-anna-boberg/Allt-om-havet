@@ -139,6 +139,7 @@
       'post_status'=>'publish',
       'post_title',
       'post_type'=>'hamn',
+      'numberposts'=>-1,
       'ID',
       'meta_key'=>'lat',
       'meta_key'=>'long'
