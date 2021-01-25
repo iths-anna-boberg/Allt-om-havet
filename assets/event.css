@@ -460,3 +460,15 @@ input.tribe-events-c-search__input  {
 .tribe-events-calendar-list div {
   margin: 5px !important;
 }
+
+.aoh-event-container {
+  padding-top: 2rem;
+  min-height: calc(100vh - 220px);
+}
+
+
+@media screen and (max-width: 990px){
+  .aoh-event-container {
+      min-height: calc(100vh - 241px);
+  }
+}

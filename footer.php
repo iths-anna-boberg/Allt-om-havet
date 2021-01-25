@@ -1,3 +1,5 @@
+    <div>
+    <div class="footer-spacer"></div>
     <footer class="d-flex flex-wrap flex-direction-column flex-direction-lg-row justify-content-between align-items-center aoh-footer">
       <?php
         $logo = get_theme_mod( 'custom_logo' );
@@ -16,6 +18,7 @@
         </ul>
       <?php endif; ?>
     </footer>
+    </div>
     
     <?php wp_footer(); ?>
   </body>

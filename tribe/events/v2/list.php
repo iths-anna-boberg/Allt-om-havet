@@ -28,7 +28,7 @@ if ( empty( $disable_event_search ) ) {
 }
 ?>
 
-<section class="container">
+<section class="container aoh-event-container">
   <div
     <?php tribe_classes( $container_classes ); ?>
     data-js="tribe-events-view"
