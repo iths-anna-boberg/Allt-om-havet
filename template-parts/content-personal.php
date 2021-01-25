@@ -5,7 +5,7 @@ $personal_3 = get_field('personal_3');
 $personal_4 = get_field('personal_4');
 ?>
     
-    <div class="d-flex flex-wrap justify-content-evenly personal">
+    <div class="mt-5 mb-5 d-flex flex-wrap justify-content-between personal">
        
       <?php 
       
@@ -60,6 +60,7 @@ $personal_4 = get_field('personal_4');
         </div>
         ";
       }
+
       ?>
 
     </div>

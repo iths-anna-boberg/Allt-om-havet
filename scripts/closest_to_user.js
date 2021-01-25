@@ -5,7 +5,12 @@ if(navigator.geolocation){ // If the users browser supports and the user accepts
     let lon = pos.coords.longitude;
 
     // Get all docks with their respective coords from our custom endpoint in WP
-    let dockList = await fetch('/wp-json/alltomhavet/v1/get_dock_coords');
+    let dockList;
+    if(window.location.host === 'holbling.se'){
+      dockList = await fetch('/alltomhavet/wp-json/alltomhavet/v1/get_dock_coords');
+    }else{
+      dockList = await fetch('/wp-json/alltomhavet/v1/get_dock_coords');
+    }
     dockList = await dockList.text();
     dockList = JSON.parse(dockList);
 
