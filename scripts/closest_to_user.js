@@ -34,13 +34,13 @@ if(navigator.geolocation){ // If the users browser supports and the user accepts
     let closestDockObj = dockList[0];
     
     // Add it to the DOM
-    let navbar = document.querySelector('.navbar');
-    let closestDockBtn = document.createElement('button');
-    closestDockBtn.innerHTML = `Gå till ${closestDockObj.name}, din närmsta hamn`; 
-    closestDockBtn.classList.add("aoh-btn-solid","aoh-max-width-250px");
-    navbar.appendChild(closestDockBtn);
-    closestDockBtn.addEventListener('click', e => {
-      window.location.href = closestDockObj.permalink;
-    })
+    let closestDockSpan = document.querySelector('.aoh-nearest-dock');
+    closestDockSpan.innerText = `Din närmsta hamn är ${closestDockObj.name}`;
+
+    let closestDockBtnSpan = document.querySelector('.aoh-nearest-dock-btn');
+    closestDockBtnSpan.innerText = `i ${closestDockObj.name}`
+    
+    let closestDockBtn = closestDockBtnSpan.parentElement;
+    closestDockBtn.href = closestDockObj.permalink;
   })
 }
