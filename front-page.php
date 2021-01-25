@@ -34,7 +34,7 @@
     </div>
 
     <div class="mt-5">
-      <article class="col-sm-12">
+      <article class="col-sm-12 pl-0">
         <h3 class="mb-4">Populäraste hamnarna 2020</h3>
       </article>
 
