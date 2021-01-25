@@ -31,6 +31,7 @@ get_header('small');
     endif;
     ?>
   </div>
+  <div class="push"></div>
 </div>
 <?php
     get_footer();

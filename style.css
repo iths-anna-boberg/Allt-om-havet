@@ -17,6 +17,11 @@ Author URI: https://github.com/iths-anna-boberg
   --main-white: #ffffff;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: var(--text-font);
 }
@@ -142,6 +147,7 @@ button {
 
 .aoh-navbar {
   background-color: rgba(0, 0, 0, 0.13);
+  height: 100%;
 }
 
 .nav-link a {
@@ -162,6 +168,7 @@ button {
   /* background-image: url("./mockup-assets/aoh-hero.png"); */
   background-size: cover;
   background-repeat: no-repeat;
+  height: 70px;
 }
 
 .aoh-jumbotron {
@@ -266,7 +273,15 @@ button {
   background-image: url("./mockup-assets/aoh-hero.png");
   background-repeat: no-repeat;
   background-size: 200%;
+  min-height: 70px;
+  margin-top: -70px;
 }
+
+/* @media screen and (max-width: 990px){
+  .aoh-footer{
+    height: 90px
+  }
+} */
 
 #footer-widget-area > li {
   display: flex;
