@@ -24,7 +24,10 @@ if(have_posts()){
     <?php get_template_part('template-parts/content', 'hamndata');?>
     <?php get_template_part('template-parts/content', 'hamn');?>
     <?php get_template_part('template-parts/content', 'personal');?>
-    <?php ic_reviews() ?>
+    <div class="aoh-review-container">
+      <h2>Recensioner</h2>
+      <?php ic_reviews() ?>
+    </div>
 </section>
     <?php
   }
