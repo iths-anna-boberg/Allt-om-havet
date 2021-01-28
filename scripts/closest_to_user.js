@@ -35,7 +35,7 @@ if(navigator.geolocation){ // If the users browser supports and the user accepts
     
     // Add it to the DOM
     let closestDockSpan = document.querySelector('.aoh-nearest-dock');
-    closestDockSpan.innerText = `Din närmsta hamn är ${closestDockObj.name}`;
+    closestDockSpan.innerText = `, din närmsta hamn är ${closestDockObj.name}`;
 
     let closestDockBtnSpan = document.querySelector('.aoh-nearest-dock-btn');
     closestDockBtnSpan.innerText = `i ${closestDockObj.name}`
