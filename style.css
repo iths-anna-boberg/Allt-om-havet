@@ -185,7 +185,7 @@ button {
 .aoh-hero {
   /* background-image: url("./mockup-assets/aoh-hero.png"); */
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
 
 }
