@@ -38,9 +38,9 @@
                         <img class="aoh-thumbnail-hamn" src=' . $rating_card["img_link"] .'  alt=' . $rating_card["post_title"] . ' >
                         <h6 class="mt-2"> ' . $rating_card["post_title"] . '</h6>
                         <div class="d-flex justify-content-start">
-                        <h6>Betyg: </h6> <span>' , ic_get_reviews_average_html($rating_card["id"]) , '</span>
+                        <span>' , ic_get_reviews_average_html($rating_card["id"]) , '</span>
                         </div>
-                        <a class="mb-5 aoh-btn-solid aoh-link-btn" href=' . $rating_card["post_link"] .'>' . $rating_card["post_title"] .'</a>
+                        <a class="mb-5 aoh-btn-solid aoh-link-btn" href=' . $rating_card["post_link"] .'>Visa hamn</a>
                         
                     </div>  ';
 

@@ -17,6 +17,11 @@ Author URI: https://github.com/iths-anna-boberg
   --main-white: #ffffff;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: var(--text-font);
 }
@@ -72,7 +77,7 @@ h5 {
 
 h6 {
   font-family: var(--heading-font);
-  font-size: 24px;
+  font-size: 20px;
   color: var(--main-black);
   font-weight: 600;
 }
@@ -82,13 +87,48 @@ p {
   font-size: 16px;
 }
 
-a[href^="tel"] {
+a, a:hover, a[href^="tel"] {
   color: var(--main-white);
   text-decoration: none;
+  transition: all .3s;
+}
+
+a.aoh-btn-outline:hover{
+  background: var(--main-darkblue);
+}
+
+a.aoh-btn-solid:hover{
+  background: var(--main-darkblue);
+  opacity: 1;
 }
 
 button {
   cursor: pointer;
+}
+.carousel-control-next, .carousel-control-prev {
+  opacity: 0.7 !important;
+
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+
+  border-radius: 50%;
+  padding: 1rem;
+  background-size: 15px;
+  position: relative;
+}
+.carousel-control-next-icon:before, .carousel-control-prev-icon:before {
+  background-color: black;
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.5;
+
 }
 
 .post-categories{
@@ -105,7 +145,8 @@ button {
   background: var(--main-darkblue);
   border: none;
   color: var(--main-white);
-  padding: 5px 20px;
+  padding: 8px 20px;
+  opacity: 0.8;
 }
 
 .aoh-btn-outline {
@@ -133,6 +174,7 @@ button {
 
 .aoh-navbar {
   background-color: rgba(0, 0, 0, 0.13);
+  height: 100%;
 }
 
 .nav-link a {
@@ -153,6 +195,7 @@ button {
   /* background-image: url("./mockup-assets/aoh-hero.png"); */
   background-size: cover;
   background-repeat: no-repeat;
+  height: 70px;
 }
 
 .aoh-jumbotron {
@@ -257,7 +300,18 @@ button {
   background-image: url("./mockup-assets/aoh-hero.png");
   background-repeat: no-repeat;
   background-size: 200%;
+  min-height: 70px;
+  margin-top: -70px;
 }
+
+.footer-spacer {
+  height: 150px;
+}
+/* @media screen and (max-width: 990px){
+  .aoh-footer{
+    height: 90px
+  }
+} */
 
 #footer-widget-area > li {
   display: flex;

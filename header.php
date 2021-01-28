@@ -28,16 +28,17 @@
             )
           );
         ?>
-        <button class="aoh-btn-outline">
+        <a class="aoh-btn-outline" href="./hamnar">
           Boka hamnplats
-        </button>
+        </a>
       </div>
     </nav>
     <div class="jumbotron aoh-jumbotron">
       <div class="container aoh-hero-cta">
-        <h1 class="aoh-hero-heading">Sover du också på lektionstid?</h1>
-        <p class="aoh-hero-preamble">Boka en hamnplats hos oss istället.</p>
-        <button class="aoh-btn-solid">Hitta hamnplats</button>
+        <h1 class="aoh-hero-heading">Välkommen till Allt om havet!</h1>
+        <p class="aoh-hero-preamble">Här finns hela Sveriges gästhamnar</p>
+        <p class="aoh-hero-preamble"><span class="aoh-nearest-dock"></span></p>
+        <a class="aoh-btn-solid" href="./hamnar">Boka hamnplats <span class="aoh-nearest-dock-btn"></span></a>
       </div>
     </div>
   </header>
