@@ -29,7 +29,7 @@
           );
         ?>
         <a class="aoh-btn-outline" href="./hamnar">
-          Boka hamnplats
+          Hitta hamnplats
         </a>
       </div>
     </nav>
